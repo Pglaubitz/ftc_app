@@ -1,5 +1,6 @@
 package org.firstinspires.ftc.teamcode;
 
+import com.qualcomm.robotcore.hardware.DcMotor;
 import com.qualcomm.robotcore.hardware.HardwareMap;
 
 /**
@@ -12,11 +13,11 @@ public class TankTestBase implements TestInterface
     private DcMotor driveRightOne = null;
     public void init(HardwareMap hMap)
     {
-     driveLeftOne = hMap.get("driveLeftOne"); //Motors need to be named inside the app
-     driveRightOne = hMap.get("driveRightOne");
+        driveLeftOne = hMap.dcMotor.get("driveLeftOne");
+        driveRightOne = hMap.dcMotor.get("driveRightOne");
     }
 
-    public void driveStraight(float inches)
+    public void moveStraight(float inches)
     {
 
     }
