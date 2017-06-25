@@ -16,6 +16,9 @@ public class TankTestBase implements TestInterface
         //Sample comment
         driveLeftOne = hMap.dcMotor.get("driveLeftOne");
         driveRightOne = hMap.dcMotor.get("driveRightOne");
+
+        driveRightOne.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
+        driveLeftOne.setMode(DcMotor.RunMode.STOP_AND_RESET_ENCODER);
     }
 
     public void moveStraight(float inches)
