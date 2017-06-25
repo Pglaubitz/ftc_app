@@ -13,6 +13,7 @@ public class TankTestBase implements TestInterface
     private DcMotor driveRightOne = null;
     public void init(HardwareMap hMap)
     {
+        //Sample comment
         driveLeftOne = hMap.dcMotor.get("driveLeftOne");
         driveRightOne = hMap.dcMotor.get("driveRightOne");
     }
