@@ -6,7 +6,6 @@ import com.qualcomm.robotcore.hardware.HardwareMap;
 /**
  * Created by 111 on 6/11/2017.
  */
-//f
 public class TankTestBase implements TestInterface
 {
     private DcMotor driveLeftOne = null;
